@@ -2,7 +2,7 @@ var $ = require('jquery');
 var Backbone = require('backbone');
 var myTmpl = require('./templates');
 var _ = require('underscore');
-var bitterModel = require('./bitterModel')
+var BitterModel = require('./bitterModel')
 module.exports = Backbone.View.extend({
   el: '.content',
   template: myTmpl.add,
