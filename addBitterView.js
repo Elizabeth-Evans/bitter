@@ -5,7 +5,7 @@ var _ = require('underscore');
 var bitterModel = require('./bitterModel')
 module.exports = Backbone.View.extend({
   el: '.content',
-  template: myTmpl.addTweet,
+  template: myTmpl.add,
   initialize: function () {
     console.log("I WAS CALLED", this.$el);
     console.log(myTmpl);
@@ -21,7 +21,7 @@ module.exports = Backbone.View.extend({
     return this;
   },
   events: {
-    'click .create': 'createBitter'
+    'click .addButton': 'createBitter'
   },
   createBitter: function(evt){
     evt.preventDefault();
@@ -30,7 +30,7 @@ module.exports = Backbone.View.extend({
       user: this.$el.find('input[name="user"]').val(),
       desc: this.$el.find('input[name="desc"]').val(),
     };
-    var newBitterModel = new bitterModel(newBitter);
+    var newBitterModel = new BitterModel(newBitter);
     this.$el.find('input').val('');
     newBitterModel.save();
     this.listenTo(this.collection, 'add', this.addAll);

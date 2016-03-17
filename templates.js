@@ -3,7 +3,8 @@ var templates = {};
 templates.tweet = [
   "<h2><%= title %></h2>",
   "<h4><%= user %></h4>",
-  "<p><%= desc %></p>"
+  "<p><%= desc %></p>",
+  "<button class='delete'>delete</button>"
 ].join('');
 
 
@@ -15,3 +16,5 @@ templates.add = [
     <input name="addButton" class="button" type="submit" value="Submit">
   </form>`
 ].join('');
+
+module.exports = templates
