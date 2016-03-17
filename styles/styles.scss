@@ -1,0 +1,60 @@
+
+
+.container{
+  width:60%;
+  margin-left: 23%;
+  margin-top: 2%;
+
+}
+
+
+div{
+  display:inline-block;
+  width:40%;
+  height:22rem;
+}
+
+.add{
+  width:60%;
+  margin-left: 15%;
+  margin-top: 12%;
+  margin-bottom: 5%;
+  background-color: lightgrey;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+textarea{
+  width:96%;
+  margin-bottom:3%;
+  border-radius: 5px;
+}
+
+input{
+  width:31%;
+  margin-bottom:3%;
+  height:2rem;
+  border-radius: 5px;
+}
+input:first-child{
+  width:60%;
+  /*margin-left: 18%;*/
+  /*height:2rem;*/
+}
+h2{
+  padding-bottom: 3%;
+}
+input:last-child{
+  margin-left: 65%;
+  margin-top: 5%;
+  height:3rem;
+  border-radius: 5px;
+}
+button{
+  margin:6%;
+  width:25%;
+}
+.delete{
+  margin-left: 20%;
+}
